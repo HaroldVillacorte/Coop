@@ -1,0 +1,87 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+/* Coop - Screen Reader Text */
+@mixin screen-reader-text() {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+	&:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: $text-normal-size;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+/* Coop Margin One */
+@mixin coop-margin-one() {
+	> * {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Coop Shadow */
+@mixin coop-shadow() {
+	box-shadow: 0 1px 0 0 currentColor;
+}
+
+/* Coop Text Shadow */
+@mixin coop-text-shadow() {
+	text-shadow: 2px 2px 4px #222;
+}
+
+/* Coop Button Light */
+@mixin coop-button-light() {
+	text-align: center;
+	padding: 0.25rem 1rem;
+	border: 1px solid $lightgrey;
+	color: $orange;
+	font-size: $text-normal-size;
+	font-weight: bold;
+	@include border-radius(2px);
+	&:hover,
+	&:active,
+	&:focus {
+		border-color: $orange;
+	}
+}

@@ -1,0 +1,67 @@
+.gallery {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	display: none;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+}
+
+.gallery-item {
+	text-align: center;
+}
+
+figure.gallery-item {
+}
+
+.gallery .slick-dots {
+	 position: static;
+	 color: $darkgrey;
+ }
+
+.gallery .slick-arrow {
+	top: 40%;
+	&:before {
+		color: black;
+		opacity: 1;
+		font-family: 'FontAwesome', sans-serif;
+	}
+	&:hover,
+	&:focus {
+		opacity: 0.75;
+	}
+}
+
+.gallery .slick-prev {
+	left: 0;
+	&:before {
+		content: "\f053";
+	}
+}
+
+.gallery .slick-next {
+	right: 0;
+	&:before {
+		content: "\f054";
+	}
+}
+
+.gallery .gallery-caption {
+	@include screen-reader-text;
+}
+
+.gallery-tooltip {
+	text-align: center;
+	figcaption {
+		max-width: 80%;
+		margin: 2rem auto;
+	}
+	a {
+		display: block;
+		margin: 1rem auto 0;
+		max-width: 300px;
+		@include coop-button-light;
+		border-color: $orange;
+	}
+}

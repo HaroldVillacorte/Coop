@@ -1,0 +1,17 @@
+#secondary-left .widget,
+#secondary-right .widget {
+	margin: 0 0 1.5em;
+}
+
+#secondary-right {
+	margin-top: $default-vertical-space;
+	margin-bottom: $default-vertical-space;
+}
+
+#secondary .widget,
+#secondary-right .widget {
+	margin-bottom: $default-vertical-space;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

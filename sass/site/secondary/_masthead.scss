@@ -1,0 +1,57 @@
+.site-header {
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-color: $whitesmoke;
+}
+
+.site-branding {
+	display: table-cell;
+	vertical-align: bottom;
+	padding: 2rem 0;
+	margin: 0 auto;
+}
+
+.site-title {
+	margin: 0 auto 0.75rem;
+	padding: 0;
+	font-size: 2.5rem;
+	font-weight: normal;
+	clear: both;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	line-height: 1;
+	a {
+		color: black;
+		@include transition(all 0.3s ease-in-out);
+		@include coop-text-shadow;
+	}
+	a:hover,
+	a:active,
+	a:focus {
+		box-shadow: none;
+		color: $orange;
+	}
+}
+
+.site-description {
+	margin: 0 auto;
+	color: $grey;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.6875rem;
+}
+
+#masthead > .zen-container {
+	display: table;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media all and (min-width: $breakpoint-medium) {
+	.site-title,
+	.site-description {
+		max-width: 700px;
+	}
+}

@@ -1,0 +1,59 @@
+/* Post navigation */
+.post-navigation,
+.pagination,
+.comment-navigation {
+	margin: $default-vertical-space 0 0;
+}
+
+.nav-links {
+	@include flexbox((
+		display: flex,
+		justify-content: center,
+		align-items: center
+	));
+}
+
+.page-numbers {
+	margin: 0 0.5rem;
+	text-align: center;
+	min-width: 2em;
+	height: 2em;
+	line-height: 2;
+	font-weight: bold;
+}
+
+.prev,
+.next {
+	position: relative;
+	@include ellipsis;
+	&:before,
+	&:after {
+		font-family: 'FontAwesome', sans-serif;
+		color: $orange;
+		position: absolute;
+		top: -1px;
+	}
+}
+
+.prev {
+	padding-left: 1.5em;
+	&:before {
+		content: "\f100";
+		margin-right: 0.5em;
+		left: 0;
+	}
+}
+
+.next {
+	padding-right: 1.5em;
+	&:after {
+		content: "\f101";
+		margin-left: 0.5em;
+		right: 0;
+	}
+}
+
+.current {
+	background-color: $orange;
+	color: $whitesmoke;
+}

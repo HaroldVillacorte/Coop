@@ -1,0 +1,26 @@
+{
+  "name": "coop",
+  "version": "1.0.01",
+  "description": "Coop WordPress Theme",
+  "author": "Harold Villacorte <admin@laughinghost.com>",
+  "bin": {
+    "module-name": "./bin/module-name"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "dependencies": {
+    "jquery-smooth-scroll": "*",
+    "jquery-match-height": "*",
+    "slick-carousel": "*",
+    "tooltipster": "*"
+  }
+}

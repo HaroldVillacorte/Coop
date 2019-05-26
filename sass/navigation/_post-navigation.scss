@@ -1,0 +1,66 @@
+.nav-next,
+.nav-previous {
+	font-weight: bold;
+	position: relative;
+	margin: 0 auto;
+	height: 2em;
+	line-height: 2;
+	@include ellipsis;
+	&:before,
+	&:after {
+		font-family: 'FontAwesome', sans-serif;
+		color: $orange;
+	}
+}
+
+.nav-next {
+	padding-right: 1.5em;
+	padding-left: 0.5em;
+}
+
+.nav-previous {
+	padding-left: 1.5em;
+	padding-right: 0.5em;
+}
+
+.nav-next:after,
+.nav-previous:before {
+	position: absolute;
+	top: -1px;
+}
+
+.nav-next:after {
+	content: "\f101";
+	margin-left: 0.5em;
+	right: 0;
+}
+
+.nav-previous:before {
+	content: "\f100";
+	margin-right: 0.5em;
+	left: 0;
+}
+
+.nav-next .next-title,
+.nav-previous .prev-title {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+@media all and (min-width: $breakpoint-medium) {
+	.nav-next .next-text,
+	.nav-previous .prev-text {
+		@include screen-reader-text;
+	}
+
+	.nav-next .next-title,
+	.nav-previous .prev-title {
+		position: static;
+	}
+}
+
+@media all and (max-width: $breakpoint-medium) {
+	.post-navigation a {
+	}
+}

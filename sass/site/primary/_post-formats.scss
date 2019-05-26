@@ -1,0 +1,254 @@
+/* Format: Quote */
+.hfeed:not( .search ) .format-quote {
+	.entry-summary {
+		color: #686868;
+		font-style: italic;
+		background: url(/wp-content/themes/coop/images/quote-2.1.png) no-repeat left top;
+		background-size: auto 28px;
+		min-height: 50px;
+		width: auto;
+		padding-left: 40px;
+		padding-bottom: 0.5rem;
+		margin: 2rem 0 auto;
+	}
+	.read-more {
+		display: inline-block;
+		width: 150px;
+		margin: 0 auto 0 70px;
+	}
+	.edit-link {
+		margin-left: 1rem;
+	}
+}
+
+.single .format-quote .entry-summary {
+	display: none;
+}
+
+/* Format: Aside */
+.hfeed:not( .search ) .format-aside {
+	border: 1px solid $lightgrey;
+	margin-bottom: $default-vertical-space;
+	.entry-text {
+		padding: 1rem 1rem 0;
+	}
+	.taxonomy-links,
+	.taxonomy-links-toggle,
+	.read-more {
+		display: none;
+	}
+}
+
+body:not(.logged-in):not( .search ) .format-aside {
+	.entry-footer {
+		margin-top: 0;
+	}
+}
+
+/* Format: Image */
+.hfeed:not(.search) .format-image {
+	text-align: center;
+	border: 1px solid $lightgrey;
+	padding: 2rem;
+	figure {
+		width: 100% !important;
+	}
+	.entry-text {
+		padding-left: 0;
+	}
+	.edit-link {
+		display: block;
+	}
+}
+
+.hfeed .format-image:not(.sticky) .entry-title {
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f03e";
+		padding-right: 0.75rem;
+	}
+}
+
+.search.hfeed .format-image {
+	.entry-summary {
+		display: none;
+	}
+}
+
+/* Format: Audio */
+.hfeed:not( .search ) .format-audio {
+	text-align: center;
+	border: 1px solid $lightgrey;
+	padding: 2rem;
+	.entry-text {
+		padding-left: 0;
+	}
+	.mejs-container {
+		background: $orange;
+	}
+}
+
+.single .format-audio {
+	text-align: start;
+}
+
+.hfeed .format-audio {
+	.taxonomy-links,
+	.taxonomy-links-toggle {
+		display: none;
+	}
+}
+
+.hfeed .format-audio:not(.sticky) .entry-title {
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f001";
+		padding-right: 0.75rem;
+	}
+}
+
+/* Format: Status */
+.hfeed .format-status .entry-content {
+	padding-left: 40px;
+	padding-top: 0.5rem;
+	min-height: 100px;
+	position: relative;
+	> p:last-of-type {
+		margin-bottom: 0.5em;
+	}
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f1fa";
+		font-size: 32px;
+		line-height: 1;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		color: $icon-grey;
+		z-index: -1;
+	}
+}
+
+/* Format: Link */
+.hfeed .format-link .entry-content {
+	padding-left: 40px;
+	padding-top: 1px;
+	min-height: 90px;
+	position: relative;
+	> P {
+		font-size: large;
+		margin-top: 0.5rem;
+	}
+	> p:last-of-type {
+		margin-bottom: 0.5em;
+	}
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f08e";
+		font-size: 32px;
+		line-height: 1;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		color: $icon-grey;
+	}
+}
+
+/* Format: Chat */
+.hfeed .format-chat {
+	.entry-content {
+		@include screen-reader-text;
+	}
+	.chat-container {
+		height: 220px;
+		border: 1px solid $lightgrey;
+		padding: 0 1rem;
+		margin: 2rem auto;
+		overflow: hidden;
+		background-color: $whitesmoke;
+		@include flexbox((
+			display: flex,
+			flex-direction: column,
+			justify-content: flex-end
+		));
+		p:last-child {
+			font-weight: bold;
+			font-size: large;
+		}
+	}
+}
+
+.hfeed .format-chat:not(.sticky) .entry-title {
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f1d7";
+		padding-right: 0.75rem;
+	}
+}
+
+/* Format: Video */
+.format-video  iframe {
+	max-height: 600px;
+}
+
+.hfeed .format-video iframe {
+	max-height: 400px;
+}
+
+.hfeed .format-video > .entry-text > .entry-footer {
+	margin-bottom: $default-vertical-space;
+}
+
+.hfeed .format-video:not(.sticky) > .entry-text > .entry-header > .entry-title {
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f16a";
+		padding-right: 0.75rem;
+	}
+}
+
+/* Format: Gallery */
+.hfeed .format-gallery:not(.sticky) .entry-title {
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f1c5";
+		padding-right: 0.75rem;
+	}
+}
+
+@media all and (min-width: $breakpoint-medium) {
+
+	// Format: Quote
+	.hfeed:not( .search ) .format-quote {
+		.entry-summary {
+			padding-left: 70px;
+			background-size: auto 50px;
+		}
+	}
+
+	// Format: Aside
+	.hfeed:not( .search ) .format-aside {
+		.entry-text {
+			padding: 2rem 2rem 0;
+		}
+	}
+
+	// Format: Status/Link
+	.hfeed:not( .search ) .format-status .entry-content,
+	.hfeed:not( .search ) .format-link .entry-content {
+		padding-left: 100px;
+		&:before {
+			font-size: 90px;
+			top: 0;
+			left: -10px;
+		}
+	}
+
+	// Format: Chat
+	.hfeed .format-chat {
+		.chat-container {
+			padding: 0 2rem;
+		}
+	}
+
+}

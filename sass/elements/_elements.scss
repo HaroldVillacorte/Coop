@@ -1,0 +1,87 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	color: #686868;
+	font-style: italic;
+	background: url(/wp-content/themes/coop/images/quote-2.1.png) no-repeat left top;
+	background-size: auto 20px;
+	min-height: 20px;
+	width: auto;
+	padding-left: 34px;
+	padding-bottom: 0.5rem;
+	margin: 1.5rem 0 1rem;
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+
+q {
+	display: inline-block;
+}
+
+cite {
+	font-weight: bold;
+}
+
+blockquote + cite,
+blockquote + p cite,
+q + cite,
+q + p cite {
+	margin-left: 34px;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@media all and (min-width: $breakpoint-medium) {
+	blockquote,
+	q {
+		background-size: auto 50px;
+		min-height: 50px;
+		padding-left: 70px;
+		padding-bottom: 0.5rem;
+	}
+	blockquote + cite,
+	blockquote + p cite,
+	q + cite,
+	q + p cite {
+		margin-left: 70px;
+	}
+}
+
+@import "tables";

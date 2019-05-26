@@ -1,0 +1,101 @@
+.zen-container {
+	@include zen-grid-container;
+	max-width: $container-max-width;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 0 16px;
+}
+
+body:not( .page-template-landing-page ):not( .page-template-full-width ) .site-main {
+	margin-top: $default-vertical-space;
+	margin-bottom: $default-vertical-space;
+}
+
+@media all and (min-width: $breakpoint-medium) {
+
+	/* Masthead */
+	#masthead > .zen-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.site-main {
+		@include zen-grid-item(12, 1);
+	}
+
+	#content-top {
+		@include zen-grid-item(8, 1);
+	}
+
+	.articles {
+		clear: both;
+		@include zen-grid-item(6, 3);
+	}
+
+	#secondary {
+		@include zen-grid-item(2, 1);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#secondary-right {
+		@include zen-grid-item(4, 9);
+	}
+
+	// No Sidebar
+	.sidebar-none .site-main,
+	.sidebar-none #content-top,
+	.sidebar-none .articles {
+		@include zen-grid-item(12, 1);
+	}
+
+	.hfeed.sidebar-none .articles {
+		@include zen-grid-item(8, 3);
+	}
+
+	.sidebar-none.single .articles {
+		@include zen-grid-item(10, 2);
+	}
+
+	// Sidebar Left
+	.sidebar-left:not( .page-template-full-width ):not( .page-template-landing-page ) .site-main {
+		@include zen-grid-item(12, 1);
+		#content-top {
+			@include zen-grid-item(12, 1);
+		}
+		.articles {
+			@include zen-grid-item(9, 4);
+		}
+	}
+
+	// Sidebar Right
+	.sidebar-right:not( .page-template-full-width ):not( .page-template-landing-page ) .site-main {
+		@include zen-grid-item(12, 1);
+		#content-top {
+			@include zen-grid-item(8, 1);
+		}
+		.articles {
+			@include zen-grid-item(8, 1);
+		}
+	}
+
+	// Full Width / Landing Page Templates
+	.page-template-full-width .site-main,
+	.page-template-full-width .site-main article,
+	.page-template-full-width .site-main #content-top {
+		@include zen-grid-item(12, 1);
+		float: none;
+	}
+
+	// Landing Page Template
+	.page-template-landing-page .site-main {
+		@include zen-grid-item(12, 1);
+		float: none;
+	}
+}
+
+@media all and (min-width: $container-max-width) {
+	.zen-container {
+		padding: 0;
+	}
+}

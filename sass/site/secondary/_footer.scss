@@ -1,0 +1,54 @@
+.footer-top-wrapper {
+	background-color: $whitesmoke;
+	color: $darkgrey;
+}
+
+.footer-bottom-wrapper {
+	background-color: black;
+}
+
+.footer-top-wrapper .widget-title,
+.footer-top-wrapper .widget-title a {
+	color: black;
+}
+
+.footer-bottom-wrapper .widget-title,
+.footer-bottom-wrapper .widget-title a {
+	color: $whitesmoke;
+}
+
+.footer-bottom-wrapper {
+	color: white;
+	a,
+	a:hover,
+	a:focus {
+		color: white;
+	}
+}
+
+.back-to-top {
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
+	line-height: 1;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 9999;
+	color: $orange;
+	@include opacity(0);
+	@include border-radius(50%);
+	@include transition(all 0.3s ease-in-out);
+	&:hover {
+		color: $grey;
+	}
+}
+
+@media all and (min-width: $breakpoint-medium) {
+	.footer-top-wrapper .widget-area,
+	.footer-bottom-wrapper .widget-area {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}

@@ -1,0 +1,208 @@
+.widget-title,
+.widget-title a {
+	margin-top: 0;
+	font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $orange;
+}
+
+// Entry Content widget titles.
+.entry-content .widget-title,
+.entry-content .widget-title a {
+	color: black;
+}
+
+.widget {
+	h2 a {
+		font-weight: normal;
+	}
+}
+
+// Sidebar widget titles.
+.widget-area {
+	.widget > ul {
+		padding-left: 0;
+		list-style-type: none;
+	}
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/* CORE WIDGET SHARED STYLES */
+.widget_categories,
+.widget_archive,
+.widget_meta,
+.widget_pages,
+.widget_recent_comments,
+.widget_recent_entries,
+.widget_rss {
+	> ul {
+		padding-left: 0;
+		list-style-type: none;
+	}
+}
+
+/* Tag Cloud */
+.tagcloud a {
+	@include coop-button-light;
+	display: inline-block;
+	margin-top: 0.25rem;
+}
+
+/* Calendar widget */
+.widget.widget_calendar table {
+	margin: 0;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	line-height: 2.5625;
+	padding: 0;
+	text-align: center;
+}
+
+.widget_calendar caption {
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.widget_calendar tbody a {
+	background-color: $orange;
+	color: $whitesmoke;
+	display: block;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $grey;
+		color: $whitesmoke;
+	}
+}
+
+/* RSS Widget */
+.widget_rss li {
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+.widget_rss li .rsswidget,
+.widget_rss .rss-date,
+.widget_rss .rssSummary {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.widget_rss cite:before {
+	content: 'by ';
+	font-style: normal;
+}
+
+/* I Recommend This */
+.dot-irecommendthis {
+	background: none;
+	padding-left: 0;
+	margin: 0 0 0 0.5em;
+	&:hover {
+		text-decoration: none;
+	}
+	&:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f08a";
+		margin-right: 0.125rem;
+	}
+	&:hover:before {
+		content: "\f004";
+	}
+}
+
+.hfeed .dot-irecommendthis {
+	margin: 0 0 0 0.5em;
+}
+
+.dot-irecommendthis:hover,
+.dot-irecommendthis:active,
+.dot-irecommendthis:focus,
+.dot-irecommendthis.active {
+	color: $orange !important;
+}
+
+/* SiteOrigin Post Carousel */
+.sow-carousel-item h3 {
+	@include ellipsis;
+}
+
+/* SiteOrigin Blog List */
+.blog_list_main .blog_one_style.columns {
+	margin: 0 0 2% 0 !important;
+	.image {
+		margin-left: 0 !important;
+		margin-right: 0.5em !important;
+	}
+	h4 {
+		@include ellipsis;
+	}
+}
+
+/* Google Language Translator Widget */
+.goog-te-gadget {
+	display: inline-block;
+	position: relative;
+	&:after {
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f107";
+		color: $darkgrey !important;
+		font-size: 14px !important;
+		position: absolute;
+		top: 7px;
+		right: 17px;
+	}
+}
+select.goog-te-combo {
+	border: 1px solid $lightgrey !important;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	width: 180px !important;
+}
+
+/* JetPack Share/Like This */
+.entry-content div.sharedaddy h3.sd-title {
+	font-family: Oswald, Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.entry-summary .sharedaddy {
+	display: none;
+}
+
+/* JetPack Related Content */
+.entry-content #jp-relatedposts h3.jp-relatedposts-headline {
+	font-family: Oswald, Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.entry-content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title {
+	a {
+		font-weight: bold;
+	}
+	a:hover {
+		box-shadow: none;
+	}
+}
+
+.entry-content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+.entry-content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+	opacity: 1;
+}
+
+.entry-content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+	font-style: italic;
+}

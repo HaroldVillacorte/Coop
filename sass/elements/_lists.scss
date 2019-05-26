@@ -1,0 +1,39 @@
+ul,
+ol {
+	margin: 0 0 1.5em 0;
+	list-style-position: inside;
+	padding-left: 1.5em;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ul > li,
+ol > li {
+	margin-bottom: 0.5em;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0.5em 0;
+}
+
+li > ul {
+	list-style-type: circle;
+}
+
+li > ul > li > ul {
+	list-style-type: square;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+}

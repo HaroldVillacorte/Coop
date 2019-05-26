@@ -1,0 +1,135 @@
+/*!
+Theme Name: Coop
+Theme URI: https://coopframework.com/coop/
+Author: Harold Villacorte
+Author URI: https://coopframework.com/
+Description: Coop is optimized for blogs and web pages. The layout options and overall look and feel of the theme are ideal for news, magazine, and other content publishing sites. It's clean design and strong support for Page Builder layouts also makes it a great choice for building landing pages. If you are an agency, this theme is for you.  Coop layouts and designs are optimized to work with any screen size making your content look good and be accessible on everything from smart phones to tablets and desktops to flat screen televisions and retina devices.  There are plenty of options for placing widgets and Coop automatically calculates the layout giving you virtually unlimited layout options without writing any code.  Also, Coop templates are optimized for maximum search engine and screen reader device accessibility and provides full support for YoastSEO and NavXT breadcrumbs.  The theme supports non-standard post formats, is translation ready, and provides support for high resolution post thumbnails, HD multimedia, site branding, and much much more.
+Version: 1.0.15
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: coop
+Tags: three-columns, left-sidebar, right-sidebar, accessibility-ready, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, post-formats, threaded-comments, translation-ready, blog, news
+
+Coop WordPress Theme, Copyright 2017 Harold Villacorte
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Coop is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Fonts
+# Libraries
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+	## Pagination
+	## Post Navigation
+	## Breadcrumbs
+# Accessibility
+# Alignments
+# Clearings
+# Content
+	## Posts and pages
+	## Post Formats
+	## Attachments
+	## Comments
+	## Masthead
+	## Hero
+	## Content Top
+	## Sidebar Left/Right
+	## Footer
+	## Widgets
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Helpers
+# Tooltipster
+--------------------------------------------------------------*/
+@import "compass/css3";
+@import "compass/typography/text/ellipsis";
+@import "../bower_components/zen-grids/sass/zen-grids";
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600|Oswald|Ovo|Prata';
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Helpers
+--------------------------------------------------------------*/
+@import "modules/helpers";
+
+/*--------------------------------------------------------------
+# Tooltipster
+--------------------------------------------------------------*/
+@import "modules/tooltipster";
