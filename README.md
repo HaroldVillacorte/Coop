@@ -40,6 +40,10 @@ Coop includes support for Yoast SEO breadcrumbs.
 
 == Changelog ==
 
+= 1.0.16 May 26, 2019 =
+== Required changes ==
+* Adds conditions to for taxonomy toggle
+
 = 1.0.15 May 17, 2017 =
 == Required changes ==
 * Added copyright notice to style.scss/style.css

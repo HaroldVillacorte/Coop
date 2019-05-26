@@ -40,6 +40,12 @@ Coop includes support for Yoast SEO breadcrumbs.
 
 == Changelog ==
 
+= 1.0.16 May 26, 2019 =
+== Required changes ==
+* Updates support version to WordPress 5.2.1
+* Adds conditions to for taxonomy toggle
+* Removed Bower packages.
+
 = 1.0.15 May 17, 2017 =
 == Required changes ==
 * Added copyright notice to style.scss/style.css
