@@ -30,14 +30,14 @@ module.exports = function( grunt ) {
 					// Animate
 					{
 						expand: false,
-						src: ['bower_components/animate.css/animate.css'],
+						src: ['node_modules/animate.css/animate.css'],
 						dest: 'lib/animate.css',
 						filter: 'isFile'
 					},
 
 					{
 						expand: false,
-						src: ['bower_components/animate.css/animate.min.css'],
+						src: ['node_modules/animate.css/animate.min.css'],
 						dest: 'lib/animate.min.css',
 						filter: 'isFile'
 					},
@@ -100,7 +100,7 @@ module.exports = function( grunt ) {
 					// Slick Slider
 					{
 						expand: true,
-						cwd: 'bower_components/slick-carousel/slick/',
+						cwd: 'node_modules/slick-carousel/slick/',
 						src: ['**'],
 						dest: 'lib/slick/'
 					},
