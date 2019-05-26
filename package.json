@@ -8,19 +8,23 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-clean": "*",
     "grunt-contrib-compass": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
-    "grunt-contrib-clean": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-nodeunit": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*"
   },
   "dependencies": {
-    "jquery-smooth-scroll": "*",
+    "animate.css": "^3.7.0",
+    "bower": "^1.8.8",
     "jquery-match-height": "*",
+    "jquery-smooth-scroll": "*",
+    "slick": "^1.12.2",
     "slick-carousel": "*",
-    "tooltipster": "*"
+    "tooltipster": "*",
+    "zen-grids": "^2.0.3"
   }
 }

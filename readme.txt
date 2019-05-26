@@ -4,8 +4,8 @@ Contributors: Harold Villacorte
 Tags: Tags: three-columns, left-sidebar, right-sidebar, accessibility-ready, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, post-formats, threaded-comments, translation-ready, blog, news
 
 Requires at least: 4.0
-Tested up to: 4.7.4
-Stable tag: 1.0.15
+Tested up to: 5.2.1
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
