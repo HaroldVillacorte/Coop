@@ -1,51 +1,62 @@
-=== coop ===
+# Coop
 
 Contributors: Harold Villacorte
+
 Tags: Tags: three-columns, left-sidebar, right-sidebar, accessibility-ready, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, post-formats, threaded-comments, translation-ready, blog, news
 
 Requires at least: 4.0
+
 Tested up to: 5.2.1
-Stable tag: 1.0.16
+
+Stable tag: 1.0.17
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A WordPress theme called Coop based on underscores.
 
-== Description ==
+## Description
 
 Coop is optimized for blogs and web pages. The layout options and overall look and feel of the theme are ideal for news, magazine, and other content publishing sites. It's clean design and strong support for Page Builder layouts also makes it a great choice for building landing pages. If you are an agency, this theme is for you.  Coop layouts and designs are optimized to work with any screen size making your content look good and be accessible on everything from smart phones to tablets and desktops to flat screen televisions and retina devices.  There are plenty of options for placing widgets and Coop automatically calculates the layout giving you virtually unlimited layout options without writing any code.  Also, Coop templates are optimized for maximum search engine and screen reader device accessibility and provides full support for YoastSEO and NavXT breadcrumbs.  The theme supports non-standard post formats, is translation ready, and provides support for high resolution post thumbnails, HD multimedia, site branding, and much much more.
 
-== Installation ==
+## Installation
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions
 
-= Does this theme support any plugins? =
+### Does this theme support any plugins?
 
-~~Coop includes support for Infinite Scroll in JetPack.~~
-Coop includes support for Related Content in JetPack.
-Coop includes support for Like buttons in JetPack.
-Coop includes support for Sharing buttons in JetPack.
-Coop includes support for NavXT Breadcrumb.
-Coop includes support for Google Language Translator.
-Coop includes support for Google Tag Manager for WordPress.
-Coop includes support for I Recommend This.
-Coop includes support for Max Mega Menu.
-Coop includes support for Max Mega Menu - Pro AddOn.
-Coop includes support for Page Builder by SiteOrigin.
-Coop includes support for Yoast SEO breadcrumbs.
+* ~~Coop includes support for Infinite Scroll in JetPack.~~
+* Coop includes support for Related Content in JetPack.
+* Coop includes support for Like buttons in JetPack.
+* Coop includes support for Sharing buttons in JetPack.
+* Coop includes support for NavXT Breadcrumb.
+* Coop includes support for Google Language Translator.
+* Coop includes support for Google Tag Manager for WordPress.
+* Coop includes support for I Recommend This.
+* Coop includes support for Max Mega Menu.
+* Coop includes support for Max Mega Menu - Pro AddOn.
+* Coop includes support for Page Builder by SiteOrigin.
+* Coop includes support for Yoast SEO breadcrumbs.
 
-== Changelog ==
+## Changelog
 
-= 1.0.16 May 26, 2019 =
-== Required changes ==
+### 1.0.17 May 26, 2019
+#### Required changes
+* Updates to Customizer Coop Header section
+
+### 1.0.16 May 26, 2019
+#### Required changes
+* Updates support version to WordPress 5.2.1
 * Adds conditions to for taxonomy toggle
+* Removed Bower packages.
 
-= 1.0.15 May 17, 2017 =
-== Required changes ==
+### 1.0.15 May 17, 2017
+#### Required changes
 * Added copyright notice to style.scss/style.css
 * Removed coop_hd image size
 * Removed alt option from all occurrences of the_post_thumbnail()
@@ -53,7 +64,7 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Resolved: ERROR Silencing errors is forbidden. Removed error suppression operator from str_replace() call on line 1094 of inc\coop-mobile-detect.php
 * Resolved: ERROR Found usage of constant "HEADER_TEXTCOLOR".  Removed the HEADER_TEXTCOLOR === $header_text_color equality check since there is a default
 
-== Additional changes ==
+#### Additional changes
 * Added style.css.map source map
 * Added theme support for Related Content in JetPack
 * Added post thumbnail back to Format Audio
@@ -102,16 +113,16 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Redid .pot file
 * Redid screenshot.png
 
-= 1.0.14 April 23, 2017 =
+### 1.0.14 April 23, 2017
 * Added non-minified versions of /lib/tooltipster.bundle.css and /lib/tooltipster.bundle.js
 * Replaced all occurrences of `__\((.*)\)` with  `esc_html__\($1)\)` with the exception of _s tags
 * Redid .pot file
 * Changed WordPress compatibility to 4.7.4
 
-= 1.0.13 April 19, 2017 =
+### 1.0.13 April 19, 2017
 * Added TGM Plugin Activation Library license to readme.txt
 
-= 1.0.12 April 19, 2017 =
+### 1.0.12 April 19, 2017
 * Added semicolon to &nbsp; in coop_posted_on template tag in
 * Replaced .menu with #primary-menu.menu in /sass/navigation/_menus.scss to prevent conflicts with Max Mega Menu
 * Updated included Max Mega Menu theme
@@ -126,10 +137,10 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Changed #footer-bottom Widget Title color to #f7f7f7 achieving contrast ratio of 19.6:1 with background ( #000 )
 * Redid .pot file
 
-= 1.0.11 April 04, 2017 =
+### 1.0.11 April 04, 2017
 * Updated readme.txt to reflect license change with new image used in screenshot.png
 
-= 1.0.10 April 04, 2017 =
+### 1.0.10 April 04, 2017
 * Changed accent color to #980000 achieving contrast ratio of 9:1 with white, 8.4:1 with #f7f7f7
 * Changed tooltipster background color back to #f7f7f7 achieving contrast ratio of 8.4:1 with #f7f7f7
 * Changed Main Menu background color back to #980000 achieving contrast ratio of 9:1 with white
@@ -145,7 +156,7 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Redid screenshot.png
 * Changed WordPress version compatibility to 4.7.3
 
-= 1.0.09 March 30, 2017 =
+### 1.0.09 March 30, 2017
 * Updated screen-reader-text mixin with { word-wrap: normal !important };
 * Changed brown/orange accent color to #9A6E1B to achieve 4.5:1 contrast ratio with white background
 * Changed taxonomy tooltip background color to white to achieve 4.5:1 contrast ratio with #9A6E1B text
@@ -158,13 +169,13 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Widened site-title and site-description areas to 700px
 * Added bottom padding to mobile menu
 
-= 1.0.08 March 15, 2017 =
+### 1.0.08 March 15, 2017
 * Restyled main menu.
 * Redid Coop Max Mega Menu theme
 * Redid screenshot
 * Expanded description in readme.txt
 
-= 1.0.07 March 14, 2017 =
+### 1.0.07 March 14, 2017
 * Added icon to Post Format Audio
 * Added Javascript to enhance accessibility for taxonomy links in feeds
 * Added caption to post format Image
@@ -183,29 +194,29 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Added icons to all post formats
 * Redid .pot file
 
-= 1.0.06 Feb 14, 2017 =
+### 1.0.06 Feb 14, 2017
 * Styling change to post navigation
 * Added Post Format Image support
 * Added Post Format Audio support
 * Removed action hook coop_register_required_plugins
 * Added links to images used in screenshot.png
 
-= 1.0.05 - Feb 13, 2017 =
+### 1.0.05 - Feb 13, 2017
 * Added show/hide functionality for Galleries while loading/processing
 
-= 1.0.04 - Feb 13, 2017 =
+### 1.0.04 - Feb 13, 2017
 * Replaced forEach with [].foreach.call in NodeList loops
 
-= 1.0.03 - Feb 13, 2017 =
+### 1.0.03 - Feb 13, 2017
 * Edited readme.txt
 
-= 1.0.02 - Feb 13, 2017 =
+### 1.0.02 - Feb 13, 2017
 * Added Mobile Detect license
 * Prefixed HD image size with "coop" (again)
 * Removed TGMPA action class
 * Added license for images used in screenshot.png
 
-= 1.0.01 - Feb 13, 2017 =
+### 1.0.01 - Feb 13, 2017
 * Wrote new Main Navigation
 * Removed rtl.css
 * Added licenses to readme.txt
@@ -241,10 +252,10 @@ Coop includes support for Yoast SEO breadcrumbs.
 * Added mobile and tablet body classes
 * Enhanced mobile(tablet/phone) navigation
 
-= 1.0 - Oct 05, 2016 =
+### 1.0 - Oct 05, 2016
 * Initial release
 
-== Credits ==
+## Credits
 
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
@@ -260,8 +271,8 @@ Coop includes support for Yoast SEO breadcrumbs.
     2. Image 2 - https://www.pexels.com/photo/beer-bottle-105017/
 * TGM Plugin Activation http://tgmpluginactivation.com/, Copyright (c) 2011, Thomas Griffin, [GPLv2 or later](https://opensource.org/licenses/GPL-2.0)
 
-== Notes ==
-=== Todos ===
+## Notes
+### Todos
 @todo Add title attribute to mobile "next" and "prev" links in posts nav
 @todo Add Styling back to format status/link single posts
 @todo Add title property to back-to-top
@@ -287,6 +298,6 @@ Coop includes support for Yoast SEO breadcrumbs.
 @todo Add social links solutions/options
 @todo Add header search solutions/options
 
-=== Todos: Ongoing ===
+### Todos: Ongoing
 @todo Redo screenshot.png and image licensing
 @todo Redo .pot file

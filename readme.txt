@@ -5,7 +5,7 @@ Tags: Tags: three-columns, left-sidebar, right-sidebar, accessibility-ready, cus
 
 Requires at least: 4.0
 Tested up to: 5.2.1
-Stable tag: 1.0.16
+Stable tag: 1.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,10 @@ Coop includes support for Page Builder by SiteOrigin.
 Coop includes support for Yoast SEO breadcrumbs.
 
 == Changelog ==
+
+= 1.0.17 May 26, 2019 =
+== Required changes ==
+* Updates to Customizer Coop Header section
 
 = 1.0.16 May 26, 2019 =
 == Required changes ==

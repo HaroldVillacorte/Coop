@@ -242,14 +242,26 @@ Kirki::add_field( $theme_coop, array(
 ) );
 
 Kirki::add_field( $theme_coop, array(
-	'type'     => 'color',
-	'settings' => 'coop_header_site_description',
-	'label'    => esc_html__( 'Site Description Color:', 'coop' ),
-	'section'  => 'coop_header_section',
-	'output'   => array(
+	'type'        => 'typography',
+	'settings'    => 'coop_header_site_description_typography',
+	'label'       => esc_attr__( 'Site Description Typography:', 'coop' ),
+	'section'     => 'coop_header_section',
+	'default'     => array(
+		'font-family'    => 'Oswald',
+		'variant'        => 'regular',
+		'font-size'      => '16px',
+		'line-height'    => '1.5',
+		'letter-spacing' => '3px',
+		'subsets'        => array( 'latin' ),
+		'color'          => '#000',
+		'text-transform' => 'none',
+		'text-align'     => 'center',
+	),
+	'output'      => array(
 		array(
-			'element'  => '.site-description',
-			'property' => 'color',
+			'element' => array(
+				'.site-description',
+			),
 		),
 	),
 ) );
@@ -284,9 +296,9 @@ Kirki::add_field( $theme_coop, array(
 	'default'     => array(
 		'font-family'    => 'Prata',
 		'variant'        => 'regular',
-		'font-size'      => '13px',
-		'line-height'    => '1.5',
-		'letter-spacing' => '1px',
+		'font-size'      => '16px',
+		'line-height'    => '38px',
+		'letter-spacing' => '2px',
 		'subsets'        => array( 'latin' ),
 		'color'          => '#fff',
 		'text-transform' => 'uppercase',
