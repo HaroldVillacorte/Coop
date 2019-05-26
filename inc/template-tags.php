@@ -86,7 +86,11 @@ if ( ! function_exists( 'coop_entry_footer' ) ) :
 
 			echo '</div>';
 
-			if ( ! is_single() ) {
+			// Get count of categories to determine it the taxonomy toggle
+			// should be displayed.
+			$categories_count = count(explode(',', $categories_list));
+
+			if ( ! is_single() && ( $categories_count > 1 || $tags_list ) ) {
 				echo '<div class="taxonomy-links-toggle" aria-hidden="true"></div>';
 			}
 		}
