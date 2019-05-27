@@ -5,7 +5,7 @@ Tags: Tags: three-columns, left-sidebar, right-sidebar, accessibility-ready, cus
 
 Requires at least: 4.0
 Tested up to: 5.2.1
-Stable tag: 1.0.17
+Stable tag: 1.0.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

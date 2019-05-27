@@ -2,6 +2,4 @@
 .sass-cache
 bower_components
 node_modules
-# style.css.map
-wpcs
-phpcs
+vendor
