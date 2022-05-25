@@ -7,7 +7,7 @@
     "module-name": "./bin/module-name"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.5.3",
     "grunt-contrib-clean": "*",
     "grunt-contrib-compass": "*",
     "grunt-contrib-concat": "*",
